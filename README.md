@@ -26,3 +26,42 @@ ufw allow https
 ```bash
 ufw allow 8585
 ```
+
+# مرحله سوم - نصب وب سرویس Nginx
+```bash
+apt install nginx -y
+```
+
+این مرحله نیاز به دامنه که در ابتدای مطلب گفتم داریم .
+
+در کلادفلر خودتون یک رکورد A  ایجاد کنید و آیپی سرور را در آنجا قرار دهید . آدرس رکورد را کپی کنید . مثال `Armanbash.online`
+
+
+با دستور بعد آدرس دامنه خود را در تنظیمات وارد میکنیم 
+```bash
+nano /etc/nginx/sites-available/default
+```
+حالا یک خط وجود داره که نوشته `server_name _;` بجای `_` دامنه خودتون را وارد کنید . مثال بالا رو اینجوری تغییر میدیم .
+<pre>server_name Armanbash.online;</pre>
+حالا کلید `ctrl+x` بزنید بعد `y` و `ENTER` تا تغییرات ذخیره شود .
+
+راه اندازی مجدد Nginx 
+```bash
+systemctl restart nginx
+```
+نصب core snap 
+```bash
+snap install core
+```
+نصب classic certbot
+```bash
+snap install --classic certbot
+```
+انتقال فایل های certbot دریافت شده
+```bash
+ln -s /snap/bin/certbot /usr/bin/certbot
+```
+فراخوانی certbot برای دریافت گواهی SSL دامنه وارد شده در nginx 
+```bash
+certbot --nginx
+```
