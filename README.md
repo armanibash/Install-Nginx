@@ -24,7 +24,8 @@ ufw allow https
 
 میخوام یه پورت دیگه رو برای نمونه باز کنم . پورت مثال 8585
 ```bash
-ufw allow 8585
+ufw allow 8585/tcp
+ufw allow 8585/udp
 ```
 فعال کردن فایروال
 
