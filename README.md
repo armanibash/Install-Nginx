@@ -94,3 +94,24 @@ certbot --nginx
 
 آدرس دامنه خودتون رو توی مروگر باز کنید `https://your_domain` اگر پیام خوش آمدگویی Welcome to nginx را دیدید کار تمام شده و همه چی درست انجام شده 
 
+
+
+
+# دستورات کنترل Nginx
+
+متوقف کردن انجنیکس
+```bash
+systemctl stop nginx
+```
+استارت انجنیکس
+```bash
+systemctl start nginx
+```
+ریستارت انجنیکس
+```bash
+systemctl restart nginx
+```
+اگر دامین تغییر کرد آدرس در فایل زیر است
+```
+nano /etc/nginx/sites-available/default
+```
