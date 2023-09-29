@@ -31,6 +31,8 @@ ufw allow 8585
 ```bash
 ufw enable
 ```
+ازتون سوال میپرسه که فعال بشه . پس `y` بزنید و `ENTER`
+
 چک کردن وضعیت فایروال
 ```bash
 ufw status
