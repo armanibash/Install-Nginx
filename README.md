@@ -39,7 +39,8 @@ ufw enable
 ufw status
 ```
 مثل این وضعیت بهتون نمایش میده
-<p>
+
+```
 Status: active
 
 To                         Action      From
@@ -47,16 +48,14 @@ To                         Action      From
 22/tcp                     ALLOW       Anywhere
 80/tcp                     ALLOW       Anywhere
 443                        ALLOW       Anywhere
-8585                       DENY        Anywhere
 8585/tcp                   ALLOW       Anywhere
 8585/udp                   ALLOW       Anywhere
 22/tcp (v6)                ALLOW       Anywhere (v6)
 80/tcp (v6)                ALLOW       Anywhere (v6)
 443 (v6)                   ALLOW       Anywhere (v6)
-8585 (v6)                  DENY        Anywhere (v6)
 8585/tcp (v6)              ALLOW       Anywhere (v6)
 8585/udp (v6)              ALLOW       Anywhere (v6)
-</p>
+```
 # مرحله سوم - نصب وب سرویس Nginx
 ```bash
 apt install nginx -y
