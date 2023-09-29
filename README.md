@@ -80,6 +80,7 @@ systemctl restart nginx
 ```
 نصب core snap 
 ```bash
+apt install snapd
 snap install core
 ```
 نصب classic certbot
