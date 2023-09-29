@@ -40,7 +40,7 @@ ufw status
 ```
 مثل این وضعیت بهتون نمایش میده
 
-```
+<pre>
 Status: active
 
 To                         Action      From
@@ -55,7 +55,7 @@ To                         Action      From
 443 (v6)                   ALLOW       Anywhere (v6)
 8585/tcp (v6)              ALLOW       Anywhere (v6)
 8585/udp (v6)              ALLOW       Anywhere (v6)
-```
+</pre>
 # مرحله سوم - نصب وب سرویس Nginx
 ```bash
 apt install nginx -y
