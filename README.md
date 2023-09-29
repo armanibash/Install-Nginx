@@ -26,6 +26,16 @@ ufw allow https
 ```bash
 ufw allow 8585
 ```
+فعال کردن فایروال
+
+```bash
+ufw enable
+```
+چک کردن وضعیت فایروال
+```bash
+ufw status
+```
+مثل این وضعیت بهتون نمایش میده
 
 # مرحله سوم - نصب وب سرویس Nginx
 ```bash
