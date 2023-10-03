@@ -1,4 +1,6 @@
 # نصب انجینکس بر روی سرور VPS ( ابونتو ) برای جلوگیری از فیلترشدن سرور
+https://youtu.be/QI8FH5kWRe8
+
  <a href="https://t.me/armanibashivpn" target="_blank"> Telegram </a>
  
 فرض بر این گرفته شده که شما یک سرور vps برای vpn دارید و میخوایید از فیلترشدن اون جلوگیری کنید . 
